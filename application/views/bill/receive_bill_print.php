@@ -70,7 +70,8 @@ $id = $this->input->get('id');
 	$total_tk = NULL; 
  }
 
-	foreach ($bill_cumms as $bill_cumm) {
+
+	$total_bill_comission = []; foreach ($bill_cumms as $bill_cumm) {
 	  if (!empty($bill_cumm->coms_amount_tk)) {
 		$total_r_bill[] = $bill_cumm->coms_amount_tk;
 		$bill_com_array = $bill_cumm->coms_amount_tk;
@@ -86,7 +87,7 @@ $id = $this->input->get('id');
 	$total_create_tk = NULL; 
  }
 
-	foreach ($app_tk as $ticketTaka) {
+	$total_dR_fEes = []; foreach ($app_tk as $ticketTaka) {
 		if (!empty($ticketTaka->doctor_fee)) {
 			$dcrr_f = $ticketTaka->doctor_fee;
 			$hospp_f = $ticketTaka->hospital_fee;
@@ -175,7 +176,7 @@ $id = $this->input->get('id');
 				<th> Total Created Bill </th>
 				<td style="font-weight: bold; font-size: 25px;" align="right"><?php echo array_sum($total_create_taka); ?></td>
 			</tr>
-	<?php foreach ($bill_cumms as $bill_cumm) { ?>
+	<?php $total_bill_comission_taka_s = []; foreach ($bill_cumms as $bill_cumm) { ?>
 		<?php if (!empty($bill_cumm->coms_amount_tk)) { ?>
 			<tr>
 				<th class="cat_info"><?php echo $bill_cumm->coms_person; ?></th>
@@ -187,7 +188,7 @@ $id = $this->input->get('id');
 			</tr>
 		<?php } ?>
 	<?php }  ?>
-	<?php foreach ($app_tk as $ticketTaka) { ?>
+	<?php $total_appoinment_taka = []; foreach ($app_tk as $ticketTaka) { ?>
 		<?php if (!empty($ticketTaka->doctor_fee)) { ?>
 			<tr>
 				<th style="font-size: 12px; " class="cat_info"><?php echo $ticketTaka->dr_name; ?></th>
