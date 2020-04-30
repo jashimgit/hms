@@ -64,6 +64,9 @@
             </div>
 			<!-- /Header -->
 			
+
+
+
 			<!-- Sidebar -->
             <div class="sidebar" id="sidebar">
                 <div class="sidebar-inner slimscroll">
@@ -121,7 +124,8 @@
 
 
 
-                        <?php if ($this->ion_auth->in_group('admin')) { ?>				<li class="submenu">
+                        <?php if ($this->ion_auth->in_group('admin')) { ?>				
+                        	<li class="submenu">
 								<a class="submenu_a " href="#"><i class="fa fa-desktop"></i> <span> Reception </span> <span class="menu-arrow"></span></a>
 								<ul class="submenu_ul " style="display: none; margin-left: 30px; ">
 									<li><a href="labrcv/addnew"> Add Test </a></li>
@@ -136,6 +140,15 @@
                         <?php } ?>
 
 
+                        <?php if ($this->ion_auth->in_group('admin')) { ?>				
+                        	<li class="submenu">
+								<a class="submenu_a " href="#"><i class="fa fa-flask"></i> <span> Pathology </span> <span class="menu-arrow"></span></a>
+								<ul class="submenu_ul " style="display: none; margin-left: 30px; ">
+									<li><a href="pathology/grp_info"> Group Info </a></li>
+								</ul>
+							</li>
+                        <?php } ?>
+
 
 								</ul>
 							</li>
@@ -144,6 +157,9 @@
                 </div>
             </div>
 			<!-- /Sidebar -->
+			
+
+
 			
 			<!-- Page Wrapper -->
             <div class="page-wrapper">

@@ -1,80 +1,76 @@
-<!--sidebar end-->
-<!--main content start-->
-<section id="main-content">
-    <section class="wrapper site-min-height">
-        <!-- page start-->
-        <section class="">
 
-            <header class="panel-heading">
-                    <i class="fa fa-notes-medical"></i> Test Group Info  
-            </header>
-            <div class="panel-body">
-                
-                <div class="adv-table editable-table ">
-                    
-                      <div class=" no-print">
-                        <a data-toggle="modal" href="#myModal2">
-                            <div class="btn-group">
-                                <button id="" class="btn green">
-                                     <i class="fa fa-plus-circle"></i> Add New
-                                </button>
-                            </div>
-                        </a> 
-                    </div>
-                    
-                    <div class="space15"></div>
-                    <table class="table table-striped table-hover table-bordered" id="editable-sample">
-                        <thead>
-                            <tr>
-                                <th>Group ID</th> 
-                                <th>Short Code</th>
-                                <th>Group Name</th>
-                                <th>Department</th>
-                                <th class="no-print">Option</th>
-                            </tr>
-                        </thead>
-                        <tbody>
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="row">
+            <div class="col">
+                <h3 class="page-title"> Pathology </h3>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="home">Dashboard</a></li>
+                    <li class="breadcrumb-item active"> Group Information </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
+
+
+
+    <button type="button" data-toggle="modal" href="#add_new_group" class="btn btn-info "><i class="fa fa-plus-circle"></i> Add New Group </button>
+
+    <!-- /Page Header -->
+    
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="datatable table table-stripped">
+
+                            <thead>
+                                <tr>
+                                    <th> Group ID </th> 
+                                    <th> Short Code </th>
+                                    <th> Group Name </th>
+                                    <th> Department </th>
+                                    <th> Option </th>
+                                </tr>
+                            </thead>
+                            <tbody>
                         <?php foreach ($grp_info as $test_info) { ?>
-                            <tr class="">
-                                <td> <?php echo $test_info->tst_grp_iddi; ?></td>
-                                <td> <?php echo $test_info->tst_grp_short; ?></td>
-                                <td> <?php echo $test_info->tst_grp_name; ?></td>
-                                <td> <?php echo $test_info->diag_dept_name; ?></td>
+                                <tr class="">
+                                    <td> <?php echo $test_info->tst_grp_iddi; ?></td>
+                                    <td> <?php echo $test_info->tst_grp_short; ?></td>
+                                    <td> <?php echo $test_info->tst_grp_name; ?></td>
+                                    <td> <?php echo $test_info->diag_dept_name; ?></td>
 
-                                <td class="no-print"> 
-                                    <button type="button" class="btn btn-info editGrup" data-target="#editTestData" data-toggle="modal" title="Edit" data-id="<?php echo $test_info->tst_grp_iddi; ?>"><i class="fa fa-edit"></i> </button>
+                                    <td class="no-print"> 
+                                        <button type="button" class="btn btn-info btn-sm editGrup" data-target="#editTestData" data-toggle="modal" title="Edit" data-id="<?php echo $test_info->tst_grp_iddi; ?>"><i class="fa fa-edit"></i> </button>
 
-                                    <a class="btn btn-danger" href="pathology/deleteGrp?grpid=<?php echo $test_info->tst_grp_iddi; ?>" onclick="return confirm('Are you sure you want to delete this item?');"><i class="fa fa-trash"></i></a>                
-                                </td>
-                            </tr>
-                        <?php } ?>
-                        </tbody>
-                    </table>
+                                        <a class="btn btn-danger btn-sm" href="pathology/deleteGrp?grpid=<?php echo $test_info->tst_grp_iddi; ?>" onclick="return confirm('Are you sure you want to delete this item?');"><i class="fa fa-trash"></i></a>                
+                                    </td>
+                                </tr>
+                            <?php } ?>
+
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
-        </section>
-        <!-- page end-->
-    </section>
-</section>
-<!--main content end-->
-<!--footer start-->
+        </div>
+    </div>
 
 
-
-
-
-
-
-
-<!-- Create Bill Modal-->
-<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-    <div class="modal-dialog">
+<!-- Add New Patient Modal-->
+<div class="modal fade" id="add_new_group" aria-hidden="true" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document" >
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h4 class="modal-title"><i class="fa fa-edit"></i> Add New Test</h4>
+                <h5 class="modal-title"> Add New Group </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
+            
             <div class="modal-body">
                 <form role="form" id="AddTest" action="pathology/AddNewGrp" method="post" enctype="multipart/form-data">
            
@@ -107,7 +103,7 @@
         </div>
     </div>
 </div>
-<!-- Create Bill Modal-->
+<!-- Add Group Modal-->
 
 
 
@@ -117,16 +113,17 @@
 
 
 
-
-
-<!-- Edit Bill -->
-<div class="modal fade" id="editTestData" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-    <div class="modal-dialog">
+<!-- Edit Group Modal-->
+<div class="modal fade" id="editTestData" aria-hidden="true" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document" >
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h4 class="modal-title"><i class="fa fa-edit"></i> Edit Test Info</h4>
+                <h5 class="modal-title"> Edit Group </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
+            
             <div class="modal-body">
                 <form role="form" id="editPathoForm" action="pathology/editPathoGrp" method="post" enctype="multipart/form-data">
 
@@ -153,7 +150,7 @@
         </div>
     </div>
 </div>
-<!-- Edit Bill -->
+<!-- Edit Patient Modal-->
 
 
 
@@ -162,30 +159,8 @@
 
 
 
-
-
-
-<script type="text/javascript">
-    $('.editGrup').click(function() {
-        var grupInv = $(this).attr('data-id');
-        $.ajax({
-            url: 'pathology/editGrupByIDD?grpID='+grupInv,
-            method: 'GET',
-            data: '',
-            dataType: 'json',
-            success: function (grp_edit) {
-                $('.grp_idi').val(grp_edit.tst_grp_iddi);
-                $('.GrpName').val(grp_edit.tst_grp_name);
-                $('.GRPShort').val(grp_edit.tst_grp_short);
-            }
-        })
-    })
-</script>
-
-
-
-
-
+ 
+<script type="text/javascript" src="include/js_plugin/pathology/getGroupInfo.js"></script>
 
 
 

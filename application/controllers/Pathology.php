@@ -31,6 +31,12 @@ class Pathology extends CI_Controller {
     function index() {
         $data['ptNInfo'] = $this->labrcv_model->getptninfo();
 
+
+
+
+
+
+
         $loginId = $this->ion_auth->user()->row()->emp_id;
         $data['user_P'] = $this->settings_model->get_log_user($loginId);
 
@@ -134,15 +140,20 @@ class Pathology extends CI_Controller {
     }
 
     function grp_info() {
-        $loginId = $this->ion_auth->user()->row()->emp_id;
-        $data['user_P'] = $this->settings_model->get_log_user($loginId);
 
         $data['grp_info'] = $this->pathology_model->get_grup();
         $data['test_dept'] = $this->pathology_model->get_testDept();
 
-        $this->load->view('home/dashboard', $data); // just the header file
-        $this->load->view('pathology/grup_inf', $data);
-        $this->load->view('home/footer'); // just the header file        
+
+        $loginId = $this->ion_auth->user()->row()->auto_emp_a_iid;
+        $data['user_P'] = $this->settings_model->get_log_user($loginId); 
+        $data['site_set'] = $this->settings_model->getSettings();
+            
+        $this->load->view('head', $data);
+        $this->load->view('home/admin_head', $data);
+        $this->load->view('pathology/grup_inf', $data); 
+        $this->load->view('home/admin_foot', $data);       
+        $this->load->view('foot');    
     }
 
     function deleteGrp() {
