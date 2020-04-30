@@ -1,0 +1,392 @@
+
+
+
+.ui_extra_btn {
+  margin:0;
+  padding:0;  
+  font-family:Verdana, Geneva, sans-serif;
+  font-size:14px;
+  background:#f2f2f2;
+  text-align:center;  
+    background:transparent;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1;
+    margin: 18px;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+  display:inline-block;
+  outline:none;
+  position:relative;
+  top:0;
+  text-shadow:0 3px 3px rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  -ms-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+.ui_extra_btn_green {
+  background:#10bc98;
+  color:#fff; 
+  box-shadow: 0 3px 0 #0c8d72;
+}
+.ui_extra_btn_green:hover {
+  background:#13d7ae;
+}
+.ui_extra_btn_green:active, .ui_extra_btn_green:focus {
+  background:#0fae8d;
+}
+.ui_extra_btn_light_green{
+  background:#87bc58;
+  color:#fff;
+  box-shadow: 0 3px 0 #6ea140;  
+}
+.ui_extra_btn_light_green:hover{
+  background:#c0da82; 
+}
+.ui_extra_btn_light_green:active, .ui_extra_btn_light_green:focus{
+  background:#7fb84d; 
+}
+.ui_extra_btn_orange{
+  background:#e77e22;
+  color:#fff;
+  box-shadow: 0 3px 0 #c16515;
+}
+.ui_extra_btn_orange:hover{
+  background:#f6b417; 
+}
+.ui_extra_btn_orange:active, .ui_extra_btn_orange:focus{
+  background:#dd7418; 
+}
+.ui_extra_btn_blue{
+  background:#3cbce1;
+  color:#fff;
+  box-shadow: 0 3px 0 #1fa4cb;
+}
+.ui_extra_btn_blue:hover{
+  background:#56d7ed; 
+}
+.ui_extra_btn_blue:active, .ui_extra_btn_blue:focus{
+  background:#2fb7df; 
+}
+.ui_extra_btn_purple{
+  background:#9a59b5;
+  color:#fff;
+  box-shadow: 0 3px 0 #7f4497;
+}
+.ui_extra_btn_purple:hover{
+  background:#c472e6; 
+}
+.ui_extra_btn_purple:active, .ui_extra_btn_purple:focus{
+  background:#944fb0; 
+}
+.ui_extra_btn_yellow{
+  background:#fac75a;
+  color:#fff;
+  box-shadow: 0 3px 0 #f9b629;
+}
+.ui_extra_btn_yellow:hover{
+  background:#fce17a; 
+}
+.ui_extra_btn_yellow:active, .ui_extra_btn_yellow:focus{
+  background:#fac24b; 
+}
+.ui_extra_btn_grey{
+  background:#4c4c4c;
+  color:#fff;
+  box-shadow: 0 3px 0 #333333;
+}
+.ui_extra_btn_grey:hover{
+  background:#747373; 
+}
+.ui_extra_btn_grey:active, .ui_extra_btn_grey:focus{
+  background:#444444; 
+}
+.ui_extra_btn_red{
+  background:#e84c3d;
+  color:#fff;
+  box-shadow: 0 3px 0 #d82a1a;
+}
+.ui_extra_btn_red:hover{
+  background:#f57b8a; 
+}
+.ui_extra_btn_red:active, .ui_extra_btn_red:focus{
+  background:#e63b2b; 
+}
+.ui_extra_btn_dark-blue{
+  background:#34495e;
+  color:#fff;
+  box-shadow: 0 3px 0 #22303d;
+}
+.ui_extra_btn_dark-blue:hover{
+  background:#425c77; 
+}
+.ui_extra_btn_dark-blue:active, .ui_extra_btn_dark-blue:focus{
+  background:#2f4154; 
+}
+.ui_extra_btn_ash-grey{
+  background:#bec3c7;
+  color:#fff;
+  box-shadow: 0 3px 0 #a3aaaf;
+}
+.ui_extra_btn_ash-grey:hover{
+  background:#d0d5d9; 
+}
+.ui_extra_btn_ash-grey:active, .ui_extra_btn_ash-grey:focus{
+  background:#b0b6bb; 
+}
+.rounded{
+  border-radius:5px;  
+}
+.full-rounded{
+  border-radius:20em; 
+}
+
+/* 3D buttons */
+.press-me:active{
+  top:3px;  
+}
+.ui_extra_btn_green.press-me:active{
+  box-shadow: 0 2px 0 #0c8d72;
+}
+.ui_extra_btn_light_green.press-me:active{
+  box-shadow: 0 2px 0 #6ea140;  
+}
+.ui_extra_btn_orange.press-me:active{
+  box-shadow: 0 2px 0 #c16515;
+}
+.ui_extra_btn_blue.press-me:active{
+  box-shadow: 0 2px 0 #1fa4cb;
+}
+.ui_extra_btn_purple.press-me:active{
+  box-shadow: 0 2px 0 #7f4497;
+}
+.ui_extra_btn_yellow.press-me:active{
+  box-shadow: 0 2px 0 #f9b629;
+}
+.ui_extra_btn_grey.press-me:active{
+  box-shadow: 0 2px 0 #333333;
+}
+.ui_extra_btn_red.press-me:active{
+  box-shadow: 0 2px 0 #d82a1a;
+}
+.ui_extra_btn_dark-blue.press-me:active{
+  box-shadow: 0 2px 0 #22303d;
+}
+.ui_extra_btn_ash-grey.press-me:active{
+  box-shadow: 0 2px 0 #a3aaaf;
+}
+
+/* Transparent buttons */
+.transparent{
+  background:none;
+  box-shadow:none;
+  text-shadow:none;
+  color:#000; 
+}
+.ui_extra_btn_green.transparent{
+  border-color:#10bc98;
+}
+.ui_extra_btn_light_green.transparent{
+  border-color:#87bc58;
+}
+.ui_extra_btn_orange.transparent{
+  border-color:#e77e22;
+}
+.ui_extra_btn_blue.transparent{
+  border-color:#3cbce1;
+}
+.ui_extra_btn_purple.transparent{
+  border-color:#9a59b5;
+}
+.ui_extra_btn_yellow.transparent{
+  border-color:#fac75a;
+}
+.ui_extra_btn_grey.transparent{
+  border-color:#4c4c4c;
+}
+.ui_extra_btn_red.transparent{
+  border-color:#e84c3d;
+}
+.ui_extra_btn_dark-blue.transparent{
+  border-color:#34495e;
+}
+.ui_extra_btn_ash-grey.transparent{
+  border-color:#bec3c7;
+}
+
+/* Button Effect */
+[class*='effect-']:hover, [class*='effect-']:active, [class*='effect-']:focus{
+  background:none;
+}
+[class*='effect-']:after {
+    content: "";
+    position: absolute;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+    z-index: -1;
+}
+.rounded[class*='effect-']:after {
+    border-radius:5px;
+}
+.full-rounded[class*='effect-']:after {
+    border-radius:20em;
+}
+.effect-left:after{
+  height: 100%;
+    left: 0;
+    top: 0;
+    width: 0;
+}
+.effect-left:hover:after{
+  width:100%; 
+}
+.effect-right:after{
+  height: 100%;
+    right: 0;
+    top: 0;
+    width: 0;
+}
+.effect-right:hover:after{
+  width:100%; 
+}
+.effect-up:after{
+  width: 100%;
+    left: 0;
+    top: 0;
+    height: 0;
+}
+.effect-up:hover:after{
+  height:100%;  
+}
+.effect-down:after{
+  width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 0;
+}
+.effect-down:hover:after{
+  height:100%;  
+}
+.effect-horiz:after{
+  height: 100%;
+    left: 50%;
+    top: 0;
+    width: 0;
+}
+.effect-horiz:hover:after{
+  width:100%;
+  left:0;
+}
+.effect-vart:after{
+  width: 100%;
+    top: 50%;
+    left: 0;
+    height: 0;
+}
+.effect-vart:hover:after{
+  height:100%;
+  top:0;
+}
+.effect-box:after{
+  width: 0;
+    top: 50%;
+    left: 50%;
+    height: 0;
+}
+.effect-box:hover:after{
+  width: 100%;
+    top: 0;
+    left: 0;
+    height:100%;
+}
+.effect-down-left:after{
+  width: 0;
+    top: 0;
+    left: 0;
+    height: 0;
+}
+.effect-down-left:hover:after{
+  width: 100%;
+    height:100%;
+}
+.effect-up-right:after{
+  width: 0;
+    right: 0;
+    bottom: 0;
+    height: 0;
+}
+.effect-up-right:hover:after{
+  width: 100%;
+    height:100%;
+}
+.ui_extra_btn_green.effect-left:after, .ui_extra_btn_green.effect-right:after, .ui_extra_btn_green.effect-up:after, .ui_extra_btn_green.effect-down:after, .ui_extra_btn_green.effect-horiz:after, .ui_extra_btn_green.effect-vart:after, .ui_extra_btn_green.effect-box:after, .ui_extra_btn_green.effect-down-left:after, .ui_extra_btn_green.effect-up-right:after{
+  background:#13d7ae;
+}
+.ui_extra_btn_light_green.effect-left:after, .ui_extra_btn_light_green.effect-right:after, .ui_extra_btn_light_green.effect-up:after, .ui_extra_btn_light_green.effect-down:after, .ui_extra_btn_light_green.effect-horiz:after, .ui_extra_btn_light_green.effect-vart:after, .ui_extra_btn_light_green.effect-box:after, .ui_extra_btn_light_green.effect-down-left:after, .ui_extra_btn_light_green.effect-up-right:after{
+  background:#c0da82;
+}
+.ui_extra_btn_orange.effect-left:after, .ui_extra_btn_orange.effect-right:after, .ui_extra_btn_orange.effect-up:after, .ui_extra_btn_orange.effect-down:after, .ui_extra_btn_orange.effect-horiz:after, .ui_extra_btn_orange.effect-vart:after, .ui_extra_btn_orange.effect-box:after, .ui_extra_btn_orange.effect-down-left:after, .ui_extra_btn_orange.effect-up-right:after{
+  background:#f6b417;
+}
+.ui_extra_btn_blue.effect-left:after, .ui_extra_btn_blue.effect-right:after, .ui_extra_btn_blue.effect-up:after, .ui_extra_btn_blue.effect-down:after, .ui_extra_btn_blue.effect-horiz:after, .ui_extra_btn_blue.effect-vart:after, .ui_extra_btn_blue.effect-box:after, .ui_extra_btn_blue.effect-down-left:after, .ui_extra_btn_blue.effect-up-right:after{
+  background:#56d7ed;
+}
+.ui_extra_btn_purple.effect-left:after, .ui_extra_btn_purple.effect-right:after, .ui_extra_btn_purple.effect-up:after, .ui_extra_btn_purple.effect-down:after, .ui_extra_btn_purple.effect-horiz:after, .ui_extra_btn_purple.effect-vart:after, .ui_extra_btn_purple.effect-box:after, .ui_extra_btn_purple.effect-down-left:after, .ui_extra_btn_purple.effect-up-right:after{
+  background:#c472e6;
+}
+.ui_extra_btn_yellow.effect-left:after, .ui_extra_btn_yellow.effect-right:after, .ui_extra_btn_yellow.effect-up:after, .ui_extra_btn_yellow.effect-down:after, .ui_extra_btn_yellow.effect-horiz:after, .ui_extra_btn_yellow.effect-vart:after, .ui_extra_btn_yellow.effect-box:after, .ui_extra_btn_yellow.effect-down-left:after, .ui_extra_btn_yellow.effect-up-right:after{
+  background:#fce17a;
+}
+.ui_extra_btn_grey.effect-left:after, .ui_extra_btn_grey.effect-right:after, .ui_extra_btn_grey.effect-up:after, .ui_extra_btn_grey.effect-down:after, .ui_extra_btn_grey.effect-horiz:after, .ui_extra_btn_grey.effect-vart:after, .ui_extra_btn_grey.effect-box:after, .ui_extra_btn_grey.effect-down-left:after, .ui_extra_btn_grey.effect-up-right:after{
+  background:#747373;
+}
+.ui_extra_btn_red.effect-left:after, .ui_extra_btn_red.effect-right:after, .ui_extra_btn_red.effect-up:after, .ui_extra_btn_red.effect-down:after, .ui_extra_btn_red.effect-horiz:after, .ui_extra_btn_red.effect-vart:after, .ui_extra_btn_red.effect-box:after, .ui_extra_btn_red.effect-down-left:after, .ui_extra_btn_red.effect-up-right:after{
+  background:#f57b8a;
+}
+.ui_extra_btn_dark-blue.effect-left:after, .ui_extra_btn_dark-blue.effect-right:after, .ui_extra_btn_dark-blue.effect-up:after, .ui_extra_btn_dark-blue.effect-down:after, .ui_extra_btn_dark-blue.effect-horiz:after, .ui_extra_btn_dark-blue.effect-vart:after, .ui_extra_btn_dark-blue.effect-box:after, .ui_extra_btn_dark-blue.effect-down-left:after, .ui_extra_btn_dark-blue.effect-up-right:after{
+  background:#425c77;
+}
+.ui_extra_btn_ash-grey.effect-left:after, .ui_extra_btn_ash-grey.effect-right:after, .ui_extra_btn_ash-grey.effect-up:after, .ui_extra_btn_ash-grey.effect-down:after, .ui_extra_btn_ash-grey.effect-horiz:after, .ui_extra_btn_ash-grey.effect-vart:after, .ui_extra_btn_ash-grey.effect-box:after, .ui_extra_btn_ash-grey.effect-down-left:after, .ui_extra_btn_ash-grey.effect-up-right:after{
+  background:#d0d5d9;
+}
+
+/* glow */
+.ui_extra_btn_green.effect-glow:hover{
+  box-shadow: 0 0 10px 0 #10bc98 inset, 0 0 10px 2px #10bc98;
+}
+.ui_extra_btn_light_green.effect-glow:hover{
+  box-shadow: 0 0 10px 0 #87bc58 inset, 0 0 10px 2px #87bc58;
+}
+.ui_extra_btn_orange.effect-glow:hover{
+  box-shadow: 0 0 10px 0 #e77e22 inset, 0 0 10px 2px #e77e22;
+}
+.ui_extra_btn_blue.effect-glow:hover{
+  box-shadow: 0 0 10px 0 #3cbce1 inset, 0 0 10px 2px #3cbce1;
+}
+.ui_extra_btn_purple.effect-glow:hover{
+  box-shadow: 0 0 10px 0 #9a59b5 inset, 0 0 10px 2px #9a59b5;
+}
+.ui_extra_btn_yellow.effect-glow:hover{
+  box-shadow: 0 0 10px 0 #fac75a inset, 0 0 10px 2px #fac75a;
+}
+.ui_extra_btn_grey.effect-glow:hover{
+  box-shadow: 0 0 10px 0 #4c4c4c inset, 0 0 10px 2px #4c4c4c;
+}
+.ui_extra_btn_red.effect-glow:hover{
+  box-shadow: 0 0 10px 0 #e84c3d inset, 0 0 10px 2px #e84c3d;
+}
+.ui_extra_btn_dark-blue.effect-glow:hover{
+  box-shadow: 0 0 10px 0 #34495e inset, 0 0 10px 2px #34495e;
+}
+.ui_extra_btn_ash-grey.effect-glow:hover{
+  box-shadow: 0 0 10px 0 #bec3c7 inset, 0 0 10px 2px #bec3c7;
+}
+
+
