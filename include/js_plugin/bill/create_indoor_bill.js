@@ -35,13 +35,6 @@
             getPatientInfoByRegNo();
         })
 
-        
-      $(document).on('keypress', '.input_reg_no', function(e) {
-        if(e.which == 13) {
-          getPatientInfoByRegNo();
-        }
-      });
-
     function getPatientInfoByRegNo() {
             var input_reg_no = $('.input_reg_no').val();
             if (input_reg_no == '') {

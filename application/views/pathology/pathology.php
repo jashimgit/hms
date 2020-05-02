@@ -6,8 +6,8 @@
         <section class="">
 
             <header class="panel-heading">
-                <i class="fa fa-vial"></i>  
-                Test Report Entry 
+                <i class="fa fa-vial"></i>
+                Test Report Entry
             </header><br>
 
 
@@ -40,21 +40,5 @@
 
 
 
-<script type="text/javascript">
-
+<script type="text/javascript" src="include/js_plugin/pathology/getGroupInfo.js">
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
